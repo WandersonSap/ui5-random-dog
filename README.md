@@ -1,4 +1,4 @@
-# uir-random-dog
+# ui5-random-dog
 App "Random Dog"
 
 Instruções: 
