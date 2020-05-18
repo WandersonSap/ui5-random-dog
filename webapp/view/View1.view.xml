@@ -1,10 +1,19 @@
-<mvc:View controllerName="ovly.random-dog.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="ovly.random-dog.controller.View1" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:html="http://www.w3.org/1999/xhtml"
+displayBlock="true" 
+xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Image width="100%" id="containner"   />
+						<Image width="100%" id="imageContainerId" visible="false" />
+						<html:video autoplay="true" width="100%">
+							<html:source id="video-container" type="video/mp4" hidden="true">
+								
+							</html:source>
+						</html:video>
 					</content>
 					<footer>
 						<Bar>
